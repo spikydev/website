@@ -13,15 +13,17 @@
     <HelloWorld
       msg="We develop AI based intelligent solutions for education technologies"
     />
-    <h2 id="expTitle">Are you ready to transform education?</h2>
-    <h5 id="explanation">
-      Most institutions still lack a formal data strategy or practical measures
-      in place to advance AI capabilities, which remains a key inhibitor. The
-      vast majority of educational leaders understand the need for an AI
-      strategy. Our team of AI experts will combine your educational needs and
-      produce the right strategy to accelerate your institution into the future
-      of education.
-    </h5>
+    <div data-aos="zoom-in">
+      <h2 id="expTitle">Are you ready to transform education?</h2>
+      <h5 id="explanation">
+        Most institutions still lack a formal data strategy or practical
+        measures in place to advance AI capabilities, which remains a key
+        inhibitor. The vast majority of educational leaders understand the need
+        for an AI strategy. Our team of AI experts will combine your educational
+        needs and produce the right strategy to accelerate your institution into
+        the future of education.
+      </h5>
+    </div>
   </div>
 </template>
 
@@ -54,11 +56,12 @@ export default {
 
 #expTitle {
   color: $expcolor;
+  font-family: "Brown";
 }
 
 #explanation {
   color: $expcolor;
   line-height: 2;
-  font-weight: 350;
+  font-family: "Brown Regular";
 }
 </style>

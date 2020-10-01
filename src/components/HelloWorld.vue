@@ -1,8 +1,9 @@
 <template>
   <div data-aos="flip-right" class="hello">
     <h1 id="msg">{{ msg }}</h1>
+    <h3>99.4%</h3>
     <h5>
-      99.4% of education institutions say that AI will be instrumental to their
+      of education institutions say that AI will be instrumental to their
       institution’s competitiveness.
     </h5>
   </div>
@@ -21,6 +22,12 @@ export default {
 <style scoped lang="scss">
 @import "../assets/colors.scss";
 
+#msg {
+  color: #707070;
+  font-family: "Brown Regular";
+  font-weight: bold;
+}
+
 .hello {
   display: inline-block;
   width: 50%;
@@ -31,8 +38,17 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
+
+h3 {
+  color: $textcolor;
+  display: inline-block;
+  font-family: "Brown Regular";
+}
+
 h5 {
   color: $textcolor;
+  display: inline-block;
+  font-family: "Brown Regular";
 }
 
 @media only screen and (max-width: 965px) {
