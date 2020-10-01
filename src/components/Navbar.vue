@@ -1,23 +1,29 @@
 <template>
   <div class="mynavbar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <img src="../assets/logo_large.png" width="178px" height="47px" />
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarColor03"
-        aria-controls="navbarColor03"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="nav">
-        <router-link to="/">Home</router-link> |
-        <router-link to="/about">About</router-link>
-      </div>
-    </nav>
+    <b-navbar toggleable="lg" type="faded" variant="light">
+      <b-navbar-brand href="#">
+        <img
+          src="../assets/logo_large.png"
+          width="178px"
+          height="47px"
+          class="d-inline-block align-top"
+          alt="Kitten"
+        />
+      </b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <div id="nav">
+            <router-link to="/">Home</router-link> |
+            <router-link to="/about">About</router-link>
+          </div>
+        </b-navbar-nav>
+      </b-collapse>
+    </b-navbar>
+    <!-- Image and text -->
   </div>
 </template>
 
@@ -30,8 +36,27 @@ export default {
 <style scoped>
 .mynavbar {
   letter-spacing: 1px;
+  padding: 0% 10%;
 }
-.navbar-collapse {
-  margin-left: 80%;
+
+@media only screen and (max-width: 720px) {
+  img {
+    width: 125px;
+    height: 35px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  img {
+    width: 89px;
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  img {
+    width: 60px;
+    height: 16px;
+  }
 }
 </style>
