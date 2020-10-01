@@ -29,7 +29,7 @@ export default {
 
 #nav {
   padding: 30px;
-
+  margin-left: 80%;
   a {
     font-weight: bold;
     color: #2c3e50;

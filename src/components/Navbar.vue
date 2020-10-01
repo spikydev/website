@@ -1,7 +1,7 @@
 <template>
   <div class="mynavbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Spiky AI</a>
+      <img src="../assets/logo_large.png" width="178px" height="47px" />
       <button
         class="navbar-toggler"
         type="button"
@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "Navbar"
+  name: "Navbar",
 };
 </script>
 
