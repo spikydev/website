@@ -13,24 +13,9 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navbarColor03">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-        </ul>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
       </div>
     </nav>
   </div>
