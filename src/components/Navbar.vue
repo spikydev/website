@@ -39,14 +39,14 @@ export default {
   padding: 0% 10%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 760px) {
   img {
     width: 125px;
     height: 35px;
   }
 }
 
-@media only screen and (max-width: 510px) {
+@media only screen and (max-width: 560px) {
   img {
     width: 89px;
     height: 24px;

@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="flip-right" class="hello">
+  <div data-aos="fade-left" class="hello">
     <h1 id="msg">{{ msg }}</h1>
     <h3>99.4%</h3>
     <h5>
