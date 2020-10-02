@@ -29,7 +29,7 @@
       src="https://images.squarespace-cdn.com/content/v1/5d44ad660d24df00017284b8/1589740638753-FV0AWFQ3Q2OX86NHCHB3/ke17ZwdGBToddI8pDm48kNgFsonEPp3fPfBQwkX3i3lZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZcY1lis3u7ujHaqKviAjfgBXb2P7ACMlJX44aBDLb--x92WTJLha2eVZactBRQOPSaWMf8oKYo5TjNLnzY893erdFHRhJo0VxFpQhBJHTdAQ/segmentify.png"
       alt="segmentify.png"
     />
-    <Brands />
+    <BrandsSide />
     <img
       class="segment"
       src="https://images.squarespace-cdn.com/content/v1/5d44ad660d24df00017284b8/1589740638753-FV0AWFQ3Q2OX86NHCHB3/ke17ZwdGBToddI8pDm48kNgFsonEPp3fPfBQwkX3i3lZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZcY1lis3u7ujHaqKviAjfgBXb2P7ACMlJX44aBDLb--x92WTJLha2eVZactBRQOPSaWMf8oKYo5TjNLnzY893erdFHRhJo0VxFpQhBJHTdAQ/segmentify.png"
@@ -39,15 +39,14 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
-import Brands from "@/components/Brands.vue";
+import BrandsSide from "@/components/BrandsSideBySide.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld,
-    Brands,
+    BrandsSide,
   },
 };
 </script>
