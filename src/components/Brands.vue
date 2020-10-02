@@ -2,7 +2,7 @@
   <div data-aos="flip-up">
     <h2>Leading Brands Trust Spiky</h2>
     <div id="brands">
-      <img id="image" :src="imageURLs[indexOfImg]" />
+      <img id="image" :src="imageURLs[indexOfImg]" :class="classVar" />
     </div>
   </div>
 </template>
@@ -15,6 +15,8 @@ var data = {
     "https://www.iasp.ws/media/imagegenerator/0x100/upscale(false)/00274_01_bk-mobil-logo.png",
     "https://imgrosetta.mynet.com.tr/file/2293076/728xauto.jpg",
   ],
+  classVar: "",
+  counter: 0,
 };
 
 export default {
@@ -28,14 +30,28 @@ export default {
   created() {
     const self = this;
     setInterval(() => {
-      self.indexOfImg = (self.indexOfImg + 1) % 3;
-    }, 3000);
+      self.counter++;
+      if (self.counter === 2) {
+        self.classVar = "fadeEffect";
+        self.indexOfImg = (self.indexOfImg + 1) % 3;
+        self.counter = 0;
+      } else self.classVar = "";
+    }, 1500);
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/colors.scss";
+
+.fadeEffect {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
 #brands {
   //Our frame
   width: 200px;
@@ -64,5 +80,54 @@ h2 {
 
 b-carousel-slide {
   font-family: "Brown Regular";
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
