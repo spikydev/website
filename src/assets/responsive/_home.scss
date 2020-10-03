@@ -1,0 +1,50 @@
+//32 and 20 at start.
+@media only screen and (max-width: 965px) {
+    #expTitle {
+        font-size: 25px;
+    }
+
+    #explanation {
+        font-size: 15.625px;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    #expTitle {
+        font-size: 20px;
+    }
+
+    #explanation {
+        font-size: 12.5px;
+    }
+}
+
+@media only screen and (max-width: 607px) {
+    #expTitle {
+        font-size: 20px;
+    }
+
+    #explanation {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 485px) {
+    #expTitle {
+        font-size: 15px;
+    }
+
+    #explanation {
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #expTitle {
+        font-size: 10px;
+    }
+
+    #explanation {
+        font-size: 4px;
+    }
+}

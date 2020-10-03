@@ -39,4 +39,9 @@ export default {
     }
   }
 }
+
+.segment {
+  width: 100%;
+  padding-top: 3%;
+}
 </style>

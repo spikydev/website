@@ -35,29 +35,36 @@
       src="https://images.squarespace-cdn.com/content/v1/5d44ad660d24df00017284b8/1589740638753-FV0AWFQ3Q2OX86NHCHB3/ke17ZwdGBToddI8pDm48kNgFsonEPp3fPfBQwkX3i3lZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZcY1lis3u7ujHaqKviAjfgBXb2P7ACMlJX44aBDLb--x92WTJLha2eVZactBRQOPSaWMf8oKYo5TjNLnzY893erdFHRhJo0VxFpQhBJHTdAQ/segmentify.png"
       alt="segmentify.png"
     />
+    <DropALine id="line" />
+    <img
+      class="segment"
+      src="https://images.squarespace-cdn.com/content/v1/5d44ad660d24df00017284b8/1589740638753-FV0AWFQ3Q2OX86NHCHB3/ke17ZwdGBToddI8pDm48kNgFsonEPp3fPfBQwkX3i3lZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZcY1lis3u7ujHaqKviAjfgBXb2P7ACMlJX44aBDLb--x92WTJLha2eVZactBRQOPSaWMf8oKYo5TjNLnzY893erdFHRhJo0VxFpQhBJHTdAQ/segmentify.png"
+      alt="segmentify.png"
+    />
+    <Contact />
   </div>
 </template>
 
 <script>
 import HelloWorld from "@/components/HelloWorld.vue";
 import BrandsSide from "@/components/BrandsSideBySide.vue";
+import DropALine from "@/components/DropALine.vue";
+import Contact from "@/components/Contact.vue";
 
 export default {
   name: "Home",
   components: {
     HelloWorld,
     BrandsSide,
+    DropALine,
+    Contact,
   },
 };
 </script>
 
 <style scoped lang="scss">
 @import "../assets/colors.scss";
-
-.segment {
-  width: 100%;
-  padding-top: 3%;
-}
+@import "../assets/responsive/home.scss";
 
 hr {
   position: relative;
@@ -89,49 +96,5 @@ hr {
   color: $expcolor;
   line-height: 2;
   font-family: "Brown Regular";
-}
-//32 and 20 at start.
-@media only screen and (max-width: 965px) {
-  #expTitle {
-    font-size: 25px;
-  }
-  #explanation {
-    font-size: 15.625px;
-  }
-}
-
-@media only screen and (max-width: 860px) {
-  #expTitle {
-    font-size: 20px;
-  }
-  #explanation {
-    font-size: 12.5px;
-  }
-}
-
-@media only screen and (max-width: 607px) {
-  #expTitle {
-    font-size: 20px;
-  }
-  #explanation {
-    font-size: 8px;
-  }
-}
-@media only screen and (max-width: 485px) {
-  #expTitle {
-    font-size: 15px;
-  }
-  #explanation {
-    font-size: 6px;
-  }
-}
-
-@media only screen and (max-width: 365px) {
-  #expTitle {
-    font-size: 10px;
-  }
-  #explanation {
-    font-size: 4px;
-  }
 }
 </style>

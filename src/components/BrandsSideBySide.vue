@@ -36,6 +36,18 @@ export default {
 <style scoped lang="scss">
 @import "../assets/colors.scss";
 
+img {
+  filter: gray; /* IE6-9 */
+  -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+  filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+}
+
+/* Disable grayscale on hover */
+img:hover {
+  -webkit-filter: grayscale(0);
+  filter: none;
+}
+
 #wrapper {
   width: 100%;
 }
