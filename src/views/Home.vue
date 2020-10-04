@@ -74,17 +74,15 @@ hr {
   background: #929292;
   margin-bottom: 3%;
 }
-
 #mainimage {
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  padding: 5% 0%;
 }
 #home {
   width: 100vw;
   height: 100vh;
-  padding: 0% 15%;
+  padding: 4% 15%;
 }
 
 #expTitle {

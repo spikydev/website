@@ -23,7 +23,6 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <!-- Image and text -->
   </div>
 </template>
 
@@ -35,8 +34,11 @@ export default {
 
 <style scoped>
 .mynavbar {
+  /*position: fixed; */
+  width: 100vw; /* take up the full browser width */
+  z-index: 200; /* high z index so other content scrolls underneath */
   letter-spacing: 1px;
-  padding: 0% 10%;
+  padding: 0% 15%;
 }
 
 @media only screen and (max-width: 760px) {

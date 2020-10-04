@@ -99,17 +99,17 @@ button {
 }
 
 #firstname {
-  width: 45%;
+  width: 48%;
 }
 
 #lastname {
-  width: 45%;
+  width: 48%;
 }
 
 #title {
   font-family: "Brown Regular";
   font-size: 35px;
-  color: $textcolor;
+  color: #db4645;
   text-align: center;
   padding-top: 3%;
 }
