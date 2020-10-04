@@ -25,14 +25,29 @@
         <p style="color: #db4645; padding-left: 1em">info@spiky.ai</p>
       </div>
       <div id="SocialMedia">
-        <img src="../assets/instagramMedium.png" />
-        <img src="../assets/twitterMedium.png" />
-        <img src="../assets/gmailMedium.png" />
-        <img src="../assets/linkedinMedium.png" />
+        <a href="https://www.instagram.com/spikyai/">
+          <img src="../assets/instagramMedium.png" />
+        </a>
+        <a href="https://twitter.com/spikyAI">
+          <img src="../assets/twitterMedium.png" />
+        </a>
+        <a href="mailto:info@spiky.ai">
+          <img src="../assets/gmailMedium.png" />
+        </a>
+        <a href="https://www.linkedin.com/company/spiky-ai/">
+          <img src="../assets/linkedinMedium.png" />
+        </a>
       </div>
     </div>
-    <div id="GoogleMap">
-      <p id="temp">TODO: ADD GOOGLE MAP LOCATION</p>
+    <div id="MapWrapper">
+      <iframe
+        src="https://maps.google.com/maps?q=9 Eylül Meydanı&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        allowfullscreen
+        width="100%"
+        frameborder="0"
+        style="border: 0"
+        height="100%"
+      ></iframe>
     </div>
   </div>
 </template>
@@ -102,14 +117,18 @@ p {
 }
 
 #GoogleMap {
-  border: 2px red solid;
   margin-top: 5%;
-  height: 75px;
 }
 
 #temp {
   vertical-align: middle;
   line-height: 75px;
   text-align: center;
+}
+
+#MapWrapper {
+  height: 500px;
+  margin: 5% 0% 5% 0%;
+  border: 3px $expcolor groove;
 }
 </style>
